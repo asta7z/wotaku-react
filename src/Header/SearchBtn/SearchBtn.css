@@ -1,4 +1,5 @@
 button.search {
+    font-family: "Inter";
     background-color: var(--os-search);
     color: var(--os-search-text);
     cursor: pointer;
@@ -12,6 +13,7 @@ button.search {
     height: auto;
     align-self: center;
     margin-left: 10px;
+    font-weight: bold;
 }
 
 button.search:hover {
