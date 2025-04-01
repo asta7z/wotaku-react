@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 // Importing the Logo component
 import Logo from "./Logo/Logo";
@@ -12,8 +12,21 @@ import Socials from "./Socials/Socials";
 import Guide from "./Guide/Guide";
 
 function Header() {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <header className="header">
+        <header className={`header ${scrolled ? "header-scrolled" : ""}`}>
             <Logo />
             <SearchBtn />
             <NavBar />
