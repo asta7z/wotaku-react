@@ -23,7 +23,7 @@ src/
 1. Clone the repository:
    ```bash
    git clone https://github.com/asta7z/wotaku-react.git
-   cd wotaku-react
+   cd wotaku-react 
    ```
 
 2. Install dependencies:
