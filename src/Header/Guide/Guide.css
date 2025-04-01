@@ -1,0 +1,21 @@
+:root {
+    --os-logo: rgb(223 223 214);
+    --os-search: rgb(23 23 23);
+    --os-search-text: rgba(223, 223, 214, 0.6);
+    --os-white: rgb(215, 215, 215);
+    --os-search-hover: #7bc5e4;
+}
+
+.guide a:hover i {
+    color: rgb(223, 223, 214);
+}
+
+.guide {
+    align-self: center;
+    justify-self: center;
+    grid-area: guide;
+}
+
+.guide i {
+    color: var(--os-search-text);
+}

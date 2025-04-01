@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Inter";
+    src: url('../../assets/fonts/Inter_18pt-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Inter Semi Bold";
+    src: url('../../assets/fonts/Inter_18pt-SemiBold.ttf');
+}
+
+.navigation {
+    align-self: center;
+    grid-area: nav;
+    height: max-content;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: "Inter";
+}
+
+.navigation button {
+    position: relative;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: flex;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--os-white);
+    padding: 20px 10px;
+    font-family: "Inter Semi Bold";
+}
+
+.navigation button:hover span {
+    color: rgba(215, 215, 215, 0.7);
+}
+
+.navigation button i {
+    font-size: 10px;
+    margin-left: 6px;
+    margin-top: 2px;
+    align-self: center;
+    font-weight: 100;
+}
+
+.navigation button.menu ul.submenu {
+    position: absolute;
+    margin: 0;
+    transform: translateY(40px);
+    background-color: #202127;
+    border: 1px solid #2e2e32;
+    border-radius: 12px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    right: 0;
+    cursor: default;
+    max-width: min-content;
+    transition: all 0.3s;
+}
+
+.navigation button.menu ul.submenu li {
+    text-align: start;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-family: "Inter Semi Bold";
+    color: #dfdfd6;
+    text-wrap: nowrap;
+}
+
+.navigation button.menu ul.submenu li:hover {
+    cursor: pointer;
+    background: rgb(43 47 54);
+    color: var(--os-search-hover);
+}
+
+.navigation button:hover ul.submenu {
+    transform: translateY(30px);
+    visibility: visible;
+    opacity: 1;
+}

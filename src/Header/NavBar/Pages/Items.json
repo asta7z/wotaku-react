@@ -1,0 +1,59 @@
+[
+    {
+        "title": "pages",
+        "submenu": [
+            "Quick Start",
+            "FAQs",
+            "Websites",
+            "Software",
+            "Misc-sites",
+            "Tools",
+            "Art",
+            "Music",
+            "Games",
+            "Non-English",
+            "NSFW",
+            "Merch",
+            "Scanlation",
+            "Communities"
+        ]
+    },
+    {
+        "title": "japan",
+        "submenu": [
+            "Language",
+            "Immersion",
+            "Software",
+            "Culture"
+        ]
+    },
+    {
+        "title": "glossary",
+        "submenu": [
+            "General",
+            "Anime",
+            "Manga",
+            "NSFW"
+        ]
+    },
+    {
+        "title": "torrenting",
+        "submenu": [
+            "Getting Started",
+            "FAQs",
+            "Glossary",
+            "qBittorent",
+            "Trackers"
+        ]
+    },
+    {
+        "title": "guides",
+        "submenu": [  
+        ]
+    },
+    {
+        "title": "preferences",
+        "submenu": [  
+        ]
+    }
+]

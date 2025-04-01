@@ -1,0 +1,33 @@
+button.search {
+    background-color: var(--os-search);
+    color: var(--os-search-text);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    width: 115%;
+    text-transform: capitalize;
+    height: auto;
+    align-self: center;
+    margin-left: 10px;
+}
+
+button.search:hover {
+    border: 1px solid var(--os-search-hover);
+}
+
+button.search:hover span {
+    color: rgb(223, 223, 214);
+}
+
+button.search i {
+    margin-right: 5px;
+}
+
+button.search div {
+    border: 1px solid rgba(243, 243, 243, 0.2);
+    padding: 2px 5px;
+    border-radius: 3px;
+}

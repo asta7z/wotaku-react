@@ -1,0 +1,26 @@
+:root {
+    --os-logo: rgb(223 223 214);
+}
+
+.logo {
+    display: flex;
+}
+
+header .logo img {
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+}
+
+header a.logo {
+    color: var(--os-logo);
+    text-transform: capitalize;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    grid-area: logo;
+    font-family: 'Inter Semi Bold';
+    width: max-content;
+    height: max-content;
+    align-self: center;
+}

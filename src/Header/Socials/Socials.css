@@ -1,0 +1,36 @@
+.socials {
+    position: relative;
+    align-self: center;
+    grid-area: icons;
+    width: max-content;
+}
+
+.socials::before,
+.socials::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.064);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.socials::before {
+    left: -15px;
+}
+
+.socials::after {
+    right: -15px;
+}
+
+.socials a {
+    color: var(--os-search-text);
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.socials a:hover,
+.guide a:hover i {
+    color: rgb(223, 223, 214);
+}
