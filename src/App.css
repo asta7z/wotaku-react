@@ -1,11 +1,9 @@
-:root {
-	--os-bg-dark: #1a1a1a;
-}
-
 .App {
 	display: grid;
     width: 100%;
     height: 100vh;
+    margin: 0;
+    padding: 0;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
@@ -13,5 +11,4 @@
     "cont cont cont cont cont cont cont cont cont cont cont"
     "misc misc misc misc misc misc misc misc misc misc misc"
     "foot foot foot foot foot foot foot foot foot foot foot";
-	background: var(--os-bg-dark);
 }

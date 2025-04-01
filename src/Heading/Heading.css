@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 85%;
-    margin: 40px auto 10px auto;
+    margin: 60px auto 0 auto;
     height: 100%;
 }
 
@@ -15,7 +15,7 @@
 
 .heading .left-side .top-btn button {
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 7px;
     font-family: "Inter Semi Bold";
     padding: 5px 15px;
@@ -72,7 +72,7 @@
 }
 
 .heading .right-side img {
-    width: 340px;
+    width: 320px;
     position: relative;
     z-index: 2;
 }
@@ -83,5 +83,5 @@
     position: absolute;
     z-index: 1;
     border-radius: 100%;
-    box-shadow: 0 0 160px 160px rgba(104, 202, 255, 0.8);
+    box-shadow: 0 0 160px 160px rgb(129, 211, 255);
 }
