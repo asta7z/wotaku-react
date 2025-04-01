@@ -2,25 +2,25 @@
     {
         "title": "websites",
         "icon": "fal fa-globe",
-        "url": "#websites",
+        "url": "https://wotaku.wiki/websites",
         "discription": "Websites for anime, manga, novels & tokusatsu"
     },
     {
         "title": "software",
         "icon": "fal fa-cube",
-        "url": "#software",
+        "url": "https://wotaku.wiki/software",
         "discription": "Software for every Operating System"
     },
     {
         "title": "everything",
         "icon": "fal fa-yen-sign",
-        "url": "#everything",
+        "url": "https://wotaku.wiki/japan/languageg",
         "discription": "All about the Japanese language and culture"
     },
     {
         "title": "NSFW",
         "icon": "fal fa-ban",
-        "url": "#NSFW",
+        "url": "#haram",
         "discription": "ahem... ahem...."
     }
 ]
