@@ -13,7 +13,7 @@ import Guide from "./Guide/Guide";
 
 function Header() {
     return (
-        <header className="App-header">
+        <header className="header">
             <Logo />
             <SearchBtn />
             <NavBar />
