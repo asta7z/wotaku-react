@@ -2,58 +2,100 @@
     {
         "title": "pages",
         "submenu": [
-            "Quick Start",
-            "FAQs",
-            "Websites",
-            "Software",
-            "Misc-sites",
-            "Tools",
-            "Art",
-            "Music",
-            "Games",
-            "Non-English",
-            "NSFW",
-            "Merch",
-            "Scanlation",
-            "Communities"
+            { "label": "Quick Start", "url": "https://wotaku.wiki/qs" },
+            { "label": "FAQs", "url": "https://wotaku.wiki/faq" },
+            { "label": "Websites", "url": "https://wotaku.wiki/websites" },
+            { "label": "Software", "url": "https://wotaku.wiki/software" },
+            { "label": "Misc-sites", "url": "https://wotaku.wiki/misc" },
+            { "label": "Tools", "url": "https://wotaku.wiki/tools" },
+            { "label": "Art", "url": "https://wotaku.wiki/art" },
+            { "label": "Music", "url": "https://wotaku.wiki/music" },
+            { "label": "Games", "url": "https://wotaku.wiki/games" },
+            { "label": "Non-English", "url": "https://wotaku.wiki/nonen" },
+            { "label": "NSFW", "url": "https://wotaku.wiki/haram" },
+            { "label": "Merch", "url": "https://wotaku.wiki/merch" },
+            { "label": "Scanlation", "url": "https://wotaku.wiki/scanlation" },
+            { "label": "VTuber", "url": "https://wotaku.wiki/vtuber" },
+            { "label": "Communities", "url": "https://wotaku.wiki/comms" }
         ]
     },
     {
         "title": "japan",
         "submenu": [
-            "Language",
-            "Immersion",
-            "Software",
-            "Culture"
+            { "label": "Language", "url": "https://wotaku.wiki/japan/language" },
+            { "label": "Immersion", "url": "https://wotaku.wiki/japan/immersion" },
+            { "label": "Software", "url": "https://wotaku.wiki/japan/software" },
+            { "label": "Culture", "url": "https://wotaku.wiki/japan/culture" }
         ]
     },
     {
         "title": "glossary",
         "submenu": [
-            "General",
-            "Anime",
-            "Manga",
-            "NSFW"
+            { "label": "General", "url": "https://wotaku.wiki/glossary/general" },
+            { "label": "Anime", "url": "https://wotaku.wiki/glossary/anime" },
+            { "label": "Manga", "url": "https://wotaku.wiki/glossary/manga" },
+            { "label": "Audio", "url": "https://wotaku.wiki/glossary/audio"},
+            { "label": "NSFW", "url": "https://wotaku.wiki/glossary/haram" }
         ]
     },
     {
         "title": "torrenting",
         "submenu": [
-            "Getting Started",
-            "FAQs",
-            "Glossary",
-            "qBittorent",
-            "Trackers"
+            { "label": "Getting Started", "url": "https://wotaku.wiki/torrenting/start" },
+            { "label": "FAQs", "url": "https://wotaku.wiki/torrenting/faq" },
+            { "label": "Glossary", "url": "https://wotaku.wiki/torrenting/glossary" },
+            { "label": "qBittorent", "url": "https://wotaku.wiki/torrenting/qbit" },
+            { "label": "Trackers", "url": "https://wotaku.wiki/torrenting/trackers" }
         ]
     },
     {
         "title": "guides",
-        "submenu": [  
+        "submenu": [
+            {
+                "category": "Anime",
+                "items": [
+                    { "label": "Disc Ripping", "url": "https://wotaku.wiki/guides/anime/discrip" },
+                    { "label": "Network Streaming", "url": "https://wotaku.wiki/guides/anime/ns" }
+                ]
+            },
+            {
+                "category": "Manga",
+                "items": [
+                    { "label": "Digital Comic Info", "url": "https://wotaku.wiki/guides/manga/comicinfo" },
+                    { "label": "JXL Manga Readers", "url": "https://wotaku.wiki/guides/manga/jxl" },
+                    { "label": "Madokami", "url": "https://wotaku.wiki/guides/manga/madokami" },
+                    { "label": "Manga Image Editing", "url": "https://wotaku.wiki/guides/manga/imagedit" }
+                ]
+            },
+            {
+                "category": "Extension Repos",
+                "items": [
+                    { "label": "Mihon & Aniyomi", "url": "/guides/mangadex" },
+                    { "label": "Mangayomi", "url": "/guides/mangarock" },
+                    { "label": "Other Android Apps", "url": "/guides/mangafox" },
+                    { "label": "iOS apps", "url": "/guides/mangahere" }
+                ]
+            },
+            {
+                "category": "Music",
+                "items": [
+                    { "label": "FB2K Synced Lyrics", "url": "/guides/mangadex" },
+                    { "label": "Squidify", "url": "/guides/mangarock" },
+                    { "label": "Transcoding Audio", "url": "/guides/mangafox" }
+                ]
+            },
+            {
+                "category": "Technical",
+                "items": [
+                    { "label": "Blocking Ads", "url": "/guides/mangadex" },
+                    { "label": "IRC & XDCC", "url": "/guides/mangarock" },
+                    { "label": "JDL2 Ad-removal", "url": "/guides/mangafox" }
+                ]
+            }
         ]
     },
     {
         "title": "preferences",
-        "submenu": [  
-        ]
+        "submenu": []
     }
 ]

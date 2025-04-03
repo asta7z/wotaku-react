@@ -34,7 +34,8 @@
     font-family: "Inter Semi Bold";
 }
 
-.navigation button:hover span {
+.navigation button:hover span,
+.navigation button:hover i {
     color: rgba(215, 215, 215, 0.7);
 }
 
@@ -43,7 +44,7 @@
     margin-left: 6px;
     margin-top: 2px;
     align-self: center;
-    font-weight: 100;
+    font-weight: bolder;
 }
 
 .navigation button.menu ul.submenu {
@@ -60,26 +61,81 @@
     cursor: default;
     max-width: min-content;
     transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Use auto instead of scroll for better behavior */
+    overflow-x: hidden;
+    max-height: 85vh; /* Ensure the submenu doesn't exceed the viewport height */
 }
 
 .navigation button.menu ul.submenu li {
     text-align: start;
-    padding: 5px 10px;
-    border-radius: 6px;
-    border: 1px solid transparent;
-    font-family: "Inter Semi Bold";
+    font-family: "Inter";
     color: #dfdfd6;
     text-wrap: nowrap;
 }
 
-.navigation button.menu ul.submenu li:hover {
-    cursor: pointer;
-    background: rgb(43 47 54);
+.navigation button.menu ul.submenu li a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Inter";
+    display: block;
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.navigation button.menu ul.submenu li a:hover {
     color: var(--os-search-hover);
+    background: rgba(101, 117, 133, 0.2);
+    /* border: 1px solid rgba(101, 117, 133, 0.4); */
 }
 
 .navigation button:hover ul.submenu {
     transform: translateY(30px);
     visibility: visible;
     opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation button.menu ul.submenu li.submenu-item {
+    position: relative;
+}
+
+.navigation button.menu ul.submenu li .submenu-title {
+    display: block; /* Ensure the category title spans the full width */
+    text-align: left; /* Align category titles to the left */
+    padding: 6px 10px; /* Add consistent padding */
+    font-weight: bolder; /* Highlight the category title */
+    cursor: default;
+    color: var(--os-white);
+    opacity: 0.55;
+}
+
+.navigation button.menu ul.submenu li .nested-submenu {
+    padding: 0;
+}
+
+.separator {
+    background-color: #2e2e32;
+    display: block;
+    height: 1px;
+    width: calc(100% + 20px); /* Expands beyond parent width */
+    position: relative;
+    left: -10px; /* Offsets the extra width to align properly */
+    margin: 12px 0;
+    border-radius: 1px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.parent-container {
+    overflow: visible; /* Ensure child elements like the separator are not clipped */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures child elements are centered */
 }

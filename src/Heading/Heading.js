@@ -17,9 +17,15 @@ function Heading() {
                     The Otaku Index
                 </h1>
                 <div className="bottom-btns">
-                    <a href="#"><button className="active">browse</button></a>
-                    <a href="#"><button>github</button></a>
-                    <a href="#"><button>discord</button></a>
+                    <a href="https://wotaku.wiki/qs">
+                        <button className="active">browse</button>
+                    </a>
+                    <a href="https://github.com/asta7z/wotaku-react">
+                        <button>github</button>
+                    </a>
+                    <a href="#not-yet">
+                        <button>discord</button>
+                    </a>
                 </div>
             </div>
             <div className="right-side">

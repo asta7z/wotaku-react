@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
 function Button(props) {
     return(
-        <a href={props.url || '#'}>
+        <a target={props.blank == 1 ? "_blank" : ""} href={props.url || '#'}>
             <i className={props.icon}></i>
         </a>
     )
