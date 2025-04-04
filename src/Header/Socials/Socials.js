@@ -15,6 +15,6 @@ function Socials() {
             <Button blank = {1} url = {GetLinkByName("Instagram")} icon = {icons.instagram} />
         </div>
     )
-}<<
+}
 
 export default Socials;
